@@ -1,0 +1,118 @@
+/* 
+Name: Isabella Mills
+File name: Style.css
+Date: 1/23/2024 
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color:#ebd5e8
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    padding: 2%;
+}
+
+/* Style rules for header */
+header {
+    color: #783a70;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+header h1{
+    display:block;
+    float:right;
+    text-align: center;
+    width: 79%;
+    padding: 3em 0 3em 0;
+    font-size: 3.25em;
+}
+
+header h3 {
+    padding: 2%;
+    text-align: left;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin:0;
+    text-align: center;
+    
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a{
+    display: block;
+    color: #783a70;
+    padding: 0.5em 2em 0.5em 2em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    clear: right;
+    padding: 2%
+}
+
+main p {
+    font-size: 12pt;
+}
+
+#contact {
+    text-align: center;
+    
+}
+
+#contact p{
+    font-size: 1.25em;
+    color: #783a70;
+}
+
+.link {
+    color: #783a70;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.map {
+    border: 5px solid #000;
+}
+
+/* Style rules for footer content */
+footer {
+    background-color: white;
+    font-size: 1em;
+    text-align: center;
+    color: #783a70;
+    padding: 0.5em 0 1.5em 0;
+    
+}
+
+footer a {
+    color: #783a70;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
