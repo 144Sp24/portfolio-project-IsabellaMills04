@@ -39,28 +39,21 @@ img {
 
 /* Style rules for header */
 header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #ebd5e8;
     color: #783a70;
     font-family: Verdana, Arial, sans-serif;
+    border-bottom: 4px solid white;
 }
 
 header h1 {
+    
     display:block;
     text-align: center;
-    padding: 1.5em 0 0.5em 0;
+    padding: 1em 0 0.5em 0;
     font-size: 3.25em;
-}
-
-
-header h3 {
-    width: 79%;
-    text-align: center;
-    font-family: "Dancing Script", cursive;
-    font-size: 2em;
-}
-
-header img {
-    padding: 2%;
-    float: right;
 }
 
 /* Style rules for navigation area */
@@ -91,11 +84,21 @@ nav li a {
 /* Style rules for main content */
 main {
     clear: right;
-    padding: 2%;
+    padding: 3%;
+    padding-top:1%;
 }
 
 main p {
     font-size: 12pt;
+}
+
+#about #facts {
+    padding-right: 5%
+}
+
+.action {
+    font-size: 14pt;
+    color:#783a70;
 }
 
 #eating-habits, #fanatic-photographer, #fitness-equipment {
@@ -103,6 +106,10 @@ main p {
 }
 #eating-habits h1, #fanatic-photographer h1, #fitness-equipment h1 {
     margin-bottom: 2%;
+}
+
+#eating-habits img, #fanatic-photographer img, #fitness-equipment img {
+    border: 3px solid white;
 }
 
 .round {
@@ -126,6 +133,8 @@ main p {
 
 .map {
     border: 5px solid #000;
+    width: 75%;
+    height: 75%;
 }
 
 /* Style rules for footer content */
@@ -144,5 +153,111 @@ footer a {
     text-decoration: none;
 }
 
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) {
+    
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    
+    /* Tablet Viewport: Style rule for header */
+    header {
+        position: static;
+        border-bottom: none;
+    }
+    
+    header h1 {
+        width: 69%;
+        font-size: 2.5em;
+        float: left;
+        padding-bottom: 0;
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+        
+    }
+    
+    header h3 {
+        width: 72%;
+        float:left;
+        text-align: center;
+        font-family: "Dancing Script", cursive;
+        font-size: 2em;
+        margin-top:0;
+        padding-top: 0.25em;
+    }
+    
+    header img {
+        padding: 2%;
+        width: 24%;
+        float:right;
+        
+    }
+    
+    /* Tablet Viewport: Style rule for nav area */
+    nav {
+        clear: both;
+    }
+    
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1em;
+        border-right: 2px solid #ebd5e8;
+    }
+    
+    nav li:last-child {
+        border-right:none;
+    }
+    
+    /* Tablet Viewport: Style rules for main content area */
+    #about #facts {
+        padding-right: none;
+    }
+    
+    #eating-habits, #fanatic-photographer, #fitness-equipment{
+        width: 46%;
+        float: left;
+    }
+     
+    /* Tablet Viewport: Syle rules for footer content area */
+    footer {
+        clear: left;
+    }
+    
+}
+
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px) {
+    
+    /* Desktop Viewport: Style rule for header */
+    header h1{
+        
+        font-size: 3em;
+    }
+    
+    header img{
+        width: 20%
+    }
+    
+    /* Desktop Viewport: Style rule for nav area */
+    nav li {
+        font-size: 1.25em
+    }
+    
+    /* Desktop Viewport: Style rule for main content area */
+    #eating-habits, #fanatic-photographer, #fitness-equipment {
+        width: 29%;
+        float: left;
+    }
+
+}
 
 
